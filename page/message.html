@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/layui.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+	<!-- 头部 -->
+	<header class="service_head">
+		<div class="content">
+			<p>当前所在的位置：<a href="./database.html">科技服务信息库</a><span> &nbsp;> &nbsp;</span><a href="./database.html">创业咨询服务</a>
+			</p>
+			<div class="login">
+				<img src="../img/login_b.png" alt="">
+				<a href="#">登录 / 注册</a>
+			</div>
+		</div>
+	</header>
+	<!-- 导航 -->
+	<div class="service_nav">
+			<ul class="fl nav_li" >
+					<li><a href="./index.html">首页</a></li>
+					<li><a href="./Intermediary.html">科技中介服务</a></li>
+					<li><a href="./database.html">科技服务信息库</a></li>
+					<li><a href="./policy.html">政策发布</a></li>
+					<li><a href="./notice.html">新闻中心</a></li>
+					<li><a href="./activity.html">活动</a></li>
+					<li><a href="./introduce.html">关于我们</a></li>
+				</ul>
+		<div class="fl nav_left" >
+			<a href="./index.html">
+				<img style="width: 210px;" src="../img/logo.png" alt="">
+			</a>
+
+		</div>
+	</div>
+	<!-- 内容 -->
+	<section id="newsCenter" class="">
+		<div class="left fl">
+			<div class="nav">
+				<img src="../img/login_b.png">
+				<h4>个人中心</h4>
+			</div>
+
+			<ul class="personal">
+					<li>
+						<a  href="./personal.html">
+							个人资料
+						</a>
+					</li>
+					<li>
+						<a href="./order_window.html">
+							预约窗口
+						</a>
+					</li>
+					<li>
+						<a class="active" href="./message.html">
+							留言窗口
+						</a>
+					</li>
+					<li>
+						<a  href="./message_record.html">
+							留言记录
+						</a>
+					</li>
+					<li>
+						<a href="./form_base_manage.html">
+							信息库管理
+						</a>
+					</li>
+					<li>
+						<a href="./order_manage.html">
+							预约信息管理
+						</a>
+					</li>
+					<li>
+						<a href="./activity_manage.html">
+							活动管理
+						</a>
+					</li>
+					<li>
+						<a href="./change_password.html">
+							密码更改
+						</a>
+					</li>
+	
+				</ul>
+		</div>
+		<div class="right fl">
+			<div class="personal_top">
+				<p class="register_layui"><span></span>留言窗口 </p>
+			</div>
+			<div class="message_con">
+				<form class="layui-form" action="">
+					<div class="layui-form-item">
+						<label class="layui-form-label"><span>*</span> 联系电话：</label>
+						<div class="layui-input-inline">
+							<input autocomplete="off" name="phone" lay-verify="required|phone" placeholder="请输入手机号码" class="layui-input" placeholder="">
+						</div>
+
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">联系邮箱：</label>
+						<div class="layui-input-inline">
+							<input autocomplete="off" name="email" lay-verify="" class="layui-input" placeholder="154643@qq。com">
+						</div>
+
+					</div>
+					<div class="layui-form-item layui-form-text">
+						<label class="layui-form-label"> <span>*</span> 发布需求：</label>
+						<div class="layui-input-block">
+							<textarea name="text" placeholder="最多500个字符" lay-verify="required|title" class="layui-textarea"></textarea>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label"><span>*</span> 填写验证码：</label>
+						<div class="layui-input-block">
+							<input style="width: 180px; display: initial;" type="text" name="yzm" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+							<img src="../img/access.png" alt="">					
+								</div>
+
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" lay-submit lay-filter="formDemo">发布</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</section>
+	<footer id="footer">
+		<div>
+			<a href="./index.html">首页</a>
+			<a href="./Intermediary.html">科技中介服务</a>
+			<a href="./database.html">科技服务信息库</a>
+			<a href="#">政策发布</a>
+			<a href="./notice.html">新闻中心</a>
+			<a href="#">活动</a>
+		</div>
+		<span class="click">^</span>
+	</footer>
+	<div class="fixed">
+			<a href="./message.html">
+				<img src="../img/ziyun.png" alt="">
+				<span>用户咨询</span>
+			</a>
+		</div>
+</body>
+
+<script src="../layui.all.js"></script>
+<script src="../js/jquery-3.0.0.min.js"></script>
+<script>
+	layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider','form'], function () {
+		var laydate = layui.laydate //日期
+			, laypage = layui.laypage //分页
+			, layer = layui.layer //弹层
+			, table = layui.table //表格
+			, carousel = layui.carousel //轮播
+			, upload = layui.upload //上传
+			, element = layui.element //元素操作
+			, slider = layui.slider //滑块
+			,form = layui.form
+        form.verify({
+            title:function (value) {
+                var str = value;
+                if (str == null || str.length >500) {
+                    return '最多500个字符';
+                }
+
+            }
+
+
+        });
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+			console.log(data)
+            if($.trim(data.field.email) !== ''){
+                var email = new RegExp(/^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/) ;
+                if(!email.test(data.field.email)){
+                    layer.alert('邮箱有误，请重填', {icon: 2});
+                    return false;
+
+                }
+            }
+            return false;
+        });
+
+	})
+	//当点击跳转链接后，回到页面顶部位置
+	$("#footer .click").click(function () {
+		$('body,html').animate({ scrollTop: 0 }, 1000);
+		return false;
+	});
+
+</script>
+
+</html>

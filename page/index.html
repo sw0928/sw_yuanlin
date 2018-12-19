@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/layui.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header id="header">
+    <div class="logo">
+      <a href="./index.html"><img src="../img/logo.png" alt=""></a>
+    </div>
+
+    <ul class="layui-nav" lay-filter="">
+      <li class="layui-nav-item layui-this"><a href="./index.html">首页</a></li>
+      <li class="layui-nav-item"><a href="./Intermediary.html">科技中介服务</a></li>
+      <li class="layui-nav-item">
+        <a href="./database.html">科技服务信息库</a>
+        <dl class="layui-nav-child">
+            <!-- 二级菜单 -->
+            <dd><a href="./database.html">个人数据库</a></dd>
+            <dd><a href="./database.html">企业数据库</a></dd>
+            
+          </dl>
+      </li>
+      <li class="layui-nav-item">
+        <a href="./policy.html">政策发布</a>
+        <dl class="layui-nav-child">
+            <!-- 二级菜单 -->
+            <dd><a href="./policy.html">区级科技服务政策</a></dd>
+            <dd><a href="./policy.html">市级科技服务政策</a></dd>
+            <dd><a href="./policy.html">国家科技服务政策</a></dd>
+          </dl>
+      </li>
+      <li class="layui-nav-item">
+        <a href="./notice.html">新闻中心</a>
+        <dl class="layui-nav-child">
+            <!-- 二级菜单 -->
+            <dd><a href="./notice.html">科技服务活动通知</a></dd>
+            <dd><a href="./link.html">科技服务信息传递</a></dd>
+            <dd><a href="./video.html">科技服务资源共享</a></dd>
+          </dl>
+      </li>
+      <li class="layui-nav-item">
+        <a href="./activity.html">活动</a>
+        <dl class="layui-nav-child">
+            <!-- 二级菜单 -->
+            <dd><a href="./activity.html">活动中心</a></dd>
+           
+          </dl>
+      </li>
+      <li class="layui-nav-item">
+        <a href="./introduce.html">关于我们</a>
+        <dl class="layui-nav-child">
+          <!-- 二级菜单 -->
+          <dd><a href="./introduce.html">园区简介</a></dd>
+          <dd><a href="./park_manage.html">园区信息</a></dd>
+          <dd><a href="./contact_us.html">联系我们</a></dd>
+          <dd><a href="./legislation.html">法律条款</a></dd>
+        </dl>
+      </li>
+
+    </ul>
+    <div class="login">
+      <img src="../img/login.png" alt="">
+      <a href="./personal.html">登录 <span> / </span> </a><a href="./registered.html">注册</a>
+    </div>
+  </header>
+  <!-- 轮播 -->
+  <nav id="nav">
+
+    <div class="layui-carousel" id="carousel">
+      <div carousel-item>
+        <div>
+          <img src="../img/banner1.jpg" alt="">
+        </div>
+        <div>
+          <img src="../img/banner3.jpg" alt="">
+        </div>
+        <div>
+          <img src="../img/banner4.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <section id="access">
+    <div>
+      <p><img src="../img/access.png" alt=""> 当前在线人数：50022</p>
+      <p><img src="../img/access.png" alt="">累计访问量：333333</p>
+      <p><img src="../img/access.png" alt="">最近访问量：333333</p>
+    </div>
+  </section>
+  <section id="news">
+    <h1>新闻资讯</h1>
+    <div class="content">
+      <div class="content_1">
+        <div class="con_nav">
+          <h3> 新闻资讯</h3>
+          <img style="width: 210px;" src="../img/logo.png" alt="">
+        </div>
+        <div class="new_car">
+          <div class="layui-carousel" id="carousel_two">
+            <div carousel-item>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月2日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月16日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月18日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月12日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+  <section id="news">
+    <h1>新闻资讯</h1>
+    <div class="content">
+      <div class="content_1">
+        <div class="con_nav">
+          <h3> 新闻资讯</h3>
+          <img style="width: 210px;" src="../img/logo.png" alt="">
+        </div>
+        <div class="new_car">
+          <div class="layui-carousel" id="carousel_three">
+            <div carousel-item>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月2日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月16日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月18日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月12日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+  <section id="news">
+    <h1>新闻资讯</h1>
+    <div class="content">
+      <div class="content_1">
+        <div class="con_nav">
+          <h3> 新闻资讯</h3>
+          <img style="width: 210px;" src="../img/logo.png" alt="">
+        </div>
+        <div class="new_car">
+          <div class="layui-carousel" id="carousel_four">
+            <div carousel-item>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月2日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月16日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月18日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+              <div class="del">
+                <img src="../img/banner1.jpg" alt="">
+                <p>2018年12月12日</p>
+                <strong>撒大声地撒奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥</strong>
+                <span>少时诵诗书少时诵诗书所所所所所所所少时诵诗书少时诵诗书所所所所所所所所少时诵诗书少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所所</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+  <section id="link">
+    <h1>友情链接</h1>
+    <div class="cont">
+      <div class="label"></div>
+      <div class="link_lis">
+        <a href="http://www.most.gov.cn/"><img src="../img/access.png" alt="">中国科学技术部</a>
+        <a href="http://www.chinatax.gov.cn/"><img src="../img/access.png" alt="">国家税务总局</a>
+        <a href="http://www.chinatorch.gov.cn/"> <img src="../img/access.png" alt="">科技部火炬中心</a>
+        <a href="http://www.stcsm.gov.cn/"> <img src="../img/access.png" alt="">上海科技</a>
+        <a href="http://www.tax.sh.gov.cn/pub/"> <img src="../img/access.png" alt="">上海市税务局</a>
+        <a href="http://www.sheitc.gov.cn/"> <img src="../img/access.png" alt="">上海市经济和信息化委员会</a>
+        <a href="http://www.zjsfq.gov.cn/"> <img src="../img/access.png" alt="">张江国家自主创新示范区</a>
+        <a href="http://www.shyp.gov.cn/"> <img src="../img/access.png" alt="">上海杨浦区政府信息公开网</a>
+        <a href="http://www.ypzjpt.sh.cn/"> <img src="../img/access.png" alt="">杨浦区促进产业发展公共服务网</a>
+        <a href="www.ypbase.com"> <img src="../img/access.png" alt="">杨浦科技创业中心</a>
+       
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div>
+      <p class="fl" style="color: #b3b3b3;font-size: 16px;padding: 0px 6px;margin-right: 100px;">Copyright 2018 杨浦科技创业中心版权所有<br>
+          客服热线：021-5566-6876
+          </p>
+
+      
+        <a href="./index.html">首页</a>
+        <a href="./Intermediary.html">科技中介服务</a>
+        <a href="./database.html">科技服务信息库</a><br>
+        <a href="#">政策发布</a>
+        <a href="./notice.html">新闻中心</a>
+        <a href="#">活动</a>
+      
+    </div>
+    <span class="click">^</span>
+  </footer>
+  <div class="fixed">
+    <a href="./message.html">
+      <img src="../img/ziyun.png" alt="">
+      <span>用户咨询</span>
+    </a>
+  </div>
+</body>
+
+<script src="../layui.all.js"></script>
+<script src="../js/jquery-3.0.0.min.js"></script>
+<script>
+  layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function () {
+    var laydate = layui.laydate //日期
+      , laypage = layui.laypage //分页
+      , layer = layui.layer //弹层
+      , table = layui.table //表格
+      , carousel = layui.carousel //轮播
+      , upload = layui.upload //上传
+      , element = layui.element //元素操作
+      , slider = layui.slider //滑块
+    //建造实例
+    carousel.render({
+      elem: '#carousel'
+      , width: '100%' //设置容器宽度
+      , height: '639px'
+      , arrow: 'none' //始终bu显示箭头
+      , anim: 'fade' //切换动画方式
+    });
+    carousel.render({
+      elem: '#carousel_two'
+      , width: '1180px' //设置容器宽度
+      , height: '300px'
+      , arrow: 'none' //始终bu显示箭头
+      , anim: 'fade' //切换动画方式
+      , indicator: 'outside'
+    });
+    carousel.render({
+      elem: '#carousel_three'
+      , width: '1180px' //设置容器宽度
+      , height: '300px'
+      , arrow: 'none' //始终bu显示箭头
+      , anim: 'fade' //切换动画方式
+      , indicator: 'outside'
+    });
+    carousel.render({
+      elem: '#carousel_four'
+      , width: '1180px' //设置容器宽度
+      , height: '300px'
+      , arrow: 'none' //始终bu显示箭头
+      , anim: 'fade' //切换动画方式
+      , indicator: 'outside'
+    });
+
+  })
+  //当点击跳转链接后，回到页面顶部位置
+  $("#footer .click").click(function () {
+    $('body,html').animate({ scrollTop: 0 }, 1000);
+    return false;
+  });
+</script>
+
+</html>
