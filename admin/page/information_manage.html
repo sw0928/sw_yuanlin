@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>科技服务中介平台</title>
+  <link rel="stylesheet" href="../css/layui.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/base.css">
+</head>
+<style>
+  .layui-tab-title{
+    
+      left: -1px;
+      width: 100.2%;
+      box-sizing: border-box;
+      border-right: 1px solid #fff;
+      border-left: 2px solid #fff;
+    }
+    .layui-tab-card .layui-tab-title li{
+      margin: 0 10px;
+      background: #e4e4e4;
+      border-radius: 10px 9px 0 0;
+      padding: 0px 25px;
+      font-size: 18px;
+      box-sizing: border-box
+    }
+    .layui-tab-item .link_con .item_user .name{
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+    .layui-tab-item .link_con .item_user .user_left span{
+      display: inline-block;
+   
+      font-size: 24px;
+      border: 1px solid #333;
+    
+      padding: 15px 20px;
+      position: relative;
+    
+    }
+     .but1{
+     margin: 0px 0 15px 0 !important;
+    
+    } 
+    .right .link_con li{
+      border-radius: 0 0 35px 0;
+    }
+    .sort{
+      padding: 10px 40px;
+      font-size: 15px;
+      overflow: hidden;
+      border-bottom: 1px solid #ccc;
+    }
+    .sort li{
+      float: left;
+      padding: 0 17px;
+      border: 1px solid #666;
+      margin: 0 10px;
+      cursor: default;
+    }
+    .sort .addColor3{
+      background: #ccc;
+      border: 1px solid #ccc;
+      color: #fff;
+    }
+  </style>
+
+<body>
+  <!-- 头部 -->
+  <header class="service_head">
+
+  </header>
+  <!-- 内容 -->
+  <section id="newsCenter">
+    <div class="left fl">
+      <div class="Avatar">
+        <div class="img">
+          <img style="width:100%" src="../img/logo.png" alt="">
+        </div>
+        <span style="margin-left: 10px;">管理员A</span>
+      </div>
+      <div class="link_a">
+        <a href="#">修改密码</a>
+        <a href="#">修改资料</a>
+        <a href="#">退出登录</a>
+        <a href="#">网站首页</a>
+      </div>
+
+      <div class="nav">
+        <img src="../img/login_b.png">
+        <a href="./index.html">
+          <h4>后台管理中心</h4>
+        </a>
+      </div>
+      <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px;">
+        <li class="layui-nav-item ">
+          <a href="javascript:;">首页管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./carousel_manage.html">首页轮播图管理</a></dd>
+            <dd><a href="javascript:;">自定义界面管理</a></dd>
+            <dd><a href="./link_manage.html">友情链接管理</a></dd>
+            <dd><a href="./footer_text.html">底部文字管理</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item  ">
+          <a href="javascript:;">科技中介服务管理</a>
+          <dl class="layui-nav-child">
+            <dd ><a href="./Intermediary_manage.html">科技中介服务管理</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">科技服务信息库管理</a>
+          <dl class="layui-nav-child">
+            <dd class="layui-this"><a href="./information_manage.html">用户信息库</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">政策发布管理</a>
+          <dl class="layui-nav-child">
+              <dd ><a href="./policy_manage.html">区级科技服务政策</a></dd>
+              <dd><a href="javascript:;">市级科技服务政策</a></dd>
+            <dd><a href="javascript:;">国家科技服务政策</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">新闻中心管理</a>
+          <dl class="layui-nav-child">
+              <dd ><a href="./notice_manage.html">科技服务活动通知</a></dd>
+              <dd ><a href="./news_manage.html">科技服务信息传递</a></dd>
+              <dd ><a href="./video_manage.html">科技服务咨询分享</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="javascript:;">活动平台管理</a> </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">关于我们管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">园区介绍</a></dd>
+            <dd><a href="javascript:;">园区信息</a></dd>
+            <dd><a href="javascript:;">联系我们</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item ">
+          <a href="javascript:;">用户信息维护</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./user_manage.html">用户信息查询</a></dd>
+
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">用户进度维护</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">预约进度管理</a></dd>
+            <dd><a href="javascript:;">用户留言管理</a></dd>
+            <dd><a href="javascript:;">活动报名管理</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">后台设置</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">管理员权限</a></dd>
+            <dd><a href="javascript:;">后台数据下载</a></dd>
+
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <div class="right fl">
+      <div class="nav">
+        <h4>数据库管理</h4>
+      </div>
+      <div class="sort">
+          <span class="fl">排序：</span>
+          <ul>
+            <li class="addColor3">默认</li>
+            <li>时间</li>
+            <li>人气</li>
+          </ul>
+        </div>
+      <div class="search">
+
+        <input type="text" placeholder="搜索企业">
+        <button>
+          <img style="width:28px" src="../img/search.png" alt="">
+        </button>
+      </div>
+      <div class="layui-tab layui-tab-card">
+        <ul class="layui-tab-title">
+          <li class="layui-this">综合</li>
+          <li>个人数据</li>
+          <li>企业机构数据</li>
+
+        </ul>
+        <div class="layui-tab-content">
+          <div class="layui-tab-item layui-show">
+
+            <div class="link_con">
+              <ul>
+                <li class="item_user">
+                  <a href="">
+                    <p class="name ">用户名 </p>
+                    <div class="fl user_left">
+                      <span>企业</span>
+                    </div>
+                    <div class="fr user_right">
+                      <a class="but1" onclick="add(id)">查看</a><br>
+                      <button class="but4">已审核</button>
+
+                    </div>
+                  </a>
+                </li>
+                <li class="item_user">
+                  <p class="name ">用户名 </p>
+                  <div class="fl user_left">
+                    <span>企业</span>
+                  </div>
+                  <div class="fr user_right">
+                    <a class="but1" onclick="add(id)">查看</a><br>
+                    <button class="but4 ">已审核</button>
+                  </div>
+                </li>
+                <li class="item_user">
+                  <p class="name ">用户名 </p>
+                  <div class="fl user_left">
+                    <span>企业</span>
+                  </div>
+                  <div class="fr user_right">
+                    <a class="but1">查看</a><br>
+                    <button class="but5">未审核</button>
+                  </div>
+                </li>
+                <li class="item_user">
+                  <p class="name ">用户名 </p>
+                  <div class="fl user_left">
+                    <span>企业</span>
+                  </div>
+                  <div class="fr user_right">
+                    <a class="but1">查看</a><br>
+                    <button class="but4 ">已审核</button>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="layui-tab-item ">
+
+              <div class="link_con">
+                <ul>
+                  <li class="item_user">
+                    <a href="">
+                      <p class="name ">用户名 </p>
+                      <div class="fl user_left">
+                        <span>企业</span>
+                      </div>
+                      <div class="fr user_right">
+                        <a class="but1">查看</a><br>
+                        <button class="but5">未审核</button>
+  
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item_user">
+                    <p class="name ">用户名 </p>
+                    <div class="fl user_left">
+                      <span>企业</span>
+                    </div>
+                    <div class="fr user_right">
+                      <a class="but1">查看</a><br>
+                      <button class="but4 ">已审核</button>
+                    </div>
+                  </li>
+                  <li class="item_user">
+                    <p class="name ">用户名 </p>
+                    <div class="fl user_left">
+                      <span>企业</span>
+                    </div>
+                    <div class="fr user_right">
+                      <a class="but1">查看</a><br>
+                      <button class="but5">未审核</button>
+                    </div>
+                  </li>
+                  <li class="item_user">
+                    <p class="name ">用户名 </p>
+                    <div class="fl user_left">
+                      <span>企业</span>
+                    </div>
+                    <div class="fr user_right">
+                      <a class="but1">查看</a><br>
+                      <button class="but4 ">已审核</button>
+                    </div>
+                  </li>
+                </ul>
+  
+              </div>
+            </div>
+            <div class="layui-tab-item ">
+
+                <div class="link_con">
+                  <ul>
+                    <li class="item_user">
+                      <a href="">
+                        <p class="name ">用户名 </p>
+                        <div class="fl user_left">
+                          <span>企业</span>
+                        </div>
+                        <div class="fr user_right">
+                          <a class="but1" onclick="add(id)">查看</a><br>
+                          <button class="but4 ">已审核</button>
+    
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item_user">
+                      <p class="name ">用户名 </p>
+                      <div class="fl user_left">
+                        <span>企业</span>
+                      </div>
+                      <div class="fr user_right">
+                        <a class="but1" onclick="add(id)">查看</a><br>
+                        <button class="but5 ">未审核</button>
+                      </div>
+                    </li>
+                    <li class="item_user">
+                      <p class="name ">用户名 </p>
+                      <div class="fl user_left">
+                        <span>企业</span>
+                      </div>
+                      <div class="fr user_right">
+                        <a class="but1" onclick="add(id)">查看</a><br>
+                        <button class="but5">未审核</button>
+                      </div>
+                    </li>
+                    <li class="item_user">
+                      <p class="name ">用户名 </p>
+                      <div class="fl user_left">
+                        <span>企业</span>
+                      </div>
+                      <div class="fr user_right">
+                        <a class="but1" onclick="add(id)">查看</a><br>
+                        <button class="but4 ">已审核</button>
+                      </div>
+                    </li>
+                  </ul>
+    
+                </div>
+              </div>
+
+        </div>
+
+      </div>
+      <div id="page"></div>
+    </div>
+  </section>
+
+</body>
+
+<script src="../layui.all.js"></script>
+<script src="../js/jquery-3.0.0.min.js"></script>
+<script>
+  layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function () {
+    var laydate = layui.laydate //日期
+      , laypage = layui.laypage //分页
+      , layer = layui.layer //弹层
+      , table = layui.table //表格
+      , carousel = layui.carousel //轮播
+      , upload = layui.upload //上传
+      , element = layui.element //元素操作
+      , slider = layui.slider //滑块
+    //自定义样式
+    laypage.render({
+      elem: 'page'
+      , count: 100
+      , theme: '#1E9FFF'
+    });
+
+  })
+  $(function () {
+    add = function (id) {
+      var toUrl = "./information_detail.html?id =" + id;
+      window.open(toUrl, '_self');
+    }
+  })
+  $(".layui-nav li").click(function () {
+    //获取点击的元素给其添加样式，讲其兄弟元素的样式移除
+    $(this).addClass("layui-nav-itemed").siblings().removeClass("layui-nav-itemed");
+    //获取选中元素的下标
+
+  });
+  //切换已审核未审核
+  $(".sort li").click(function () {
+    //获取点击的元素给其添加样式，讲其兄弟元素的样式移除
+    $(this).addClass("addColor3").siblings().removeClass("addColor3");
+    //获取选中元素的下标
+
+  });
+</script>
+
+</html>

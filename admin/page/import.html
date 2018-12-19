@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>科技服务中介平台</title>
+  <link rel="stylesheet" href="../css/layui.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/base.css">
+</head>
+<style>
+  .layui-btn-xs{
+    padding: 0px 15px;
+  }
+</style>
+
+<body>
+  <!-- 头部 -->
+  <header class="service_head">
+
+  </header>
+  <!-- 内容 -->
+  <section id="newsCenter">
+    <div class="left fl">
+      <div class="Avatar">
+        <div class="img">
+          <img style="width:100%" src="../img/logo.png" alt="">
+        </div>
+        <span style="margin-left: 10px;">管理员A</span>
+      </div>
+      <div class="link_a">
+        <a href="./pass_manage.html">修改密码</a>
+        <a href="./person_manage.html">修改资料</a>
+        <a href="./register.html">退出登录</a>
+        <a href="#">网站首页</a>
+      </div>
+
+      <div class="nav">
+        <img src="../img/login_b.png">
+        <a href="./index.html">
+          <h4>后台管理中心</h4>
+        </a>
+      </div>
+      <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px;">
+        <li class="layui-nav-item ">
+          <a href="javascript:;">首页管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./carousel_manage.html">首页轮播图管理</a></dd>
+            <dd><a href="javascript:;">自定义界面管理</a></dd>
+            <dd><a href="./link_manage.html">友情链接管理</a></dd>
+            <dd><a href="./footer_text.html">底部文字管理</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">科技中介服务管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./Intermediary_manage.html">科技中介服务管理</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">科技服务信息库管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./information_manage.html">用户信息库</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">政策发布管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./policy_manage.html">区级科技服务政策</a></dd>
+            <dd><a href="javascript:;">市级科技服务政策</a></dd>
+            <dd><a href="javascript:;">国家科技服务政策</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">新闻中心管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./notice_manage.html">科技服务活动通知</a></dd>
+            <dd><a href="./news_manage.html">科技服务信息传递</a></dd>
+            <dd><a href="./video_manage.html">科技服务咨询分享</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="javascript:;">活动平台管理</a> </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">关于我们管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./introduce_manage.html">园区介绍</a></dd>
+            <dd><a href="javascript:;">园区信息</a></dd>
+            <dd><a href="javascript:;">联系我们</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">用户信息维护</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./user_manage.html">用户信息查询</a></dd>
+
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">用户进度维护</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">预约进度管理</a></dd>
+            <dd><a href="javascript:;">用户留言管理</a></dd>
+            <dd><a href="javascript:;">活动报名管理</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">后台设置</a>
+          <dl class="layui-nav-child">
+            <dd ><a href="./manage_permission.html">管理员权限</a></dd>
+            <dd class="layui-this"><a href="./import.html">后台数据下载</a></dd>
+
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <div class="right fl" style="padding: 20px 25px 500px 25px">
+
+
+      <div style="margin-bottom:20px">
+        <input type="file" id="files" style="display:none" onchange="aa();" />
+        <input class="but1" type="button" id="import" value="导入" />
+      </div>
+
+     
+      <div class="container">
+          <table id="backViewTable" class="table table-hover table-sm table2excel" style="display:none">
+              <tr>
+                  <td>#</td>
+                  <td>ID</td>
+                  <td>姓名</td>
+                  <td>座位号</td>
+                  <td>操作</td>
+              </tr>
+              <tr>
+                  <th scope="row">1</th>
+                  <td>1234</td>
+                  <td>李文斐</td>
+                  <td>2楼 3排 34号 </td>
+                  <td><input class="btn-primary" type="button" value="删除"/></td>
+              </tr>
+              <tr>
+                  <th scope="row">2</th>
+                  <td>2345</td>
+                  <td>lwf</td>
+                  <td>1楼 3排 34号</td>
+                  <td><input class="btn-primary" type="button" value="删除"/></td>
+              </tr>
+              <tr>
+                  <th scope="row">3</th>
+                  <td>3456</td>
+                  <td>Lee</td>
+                  <td>1楼 3排 12号</td>
+                  <td><input class="btn-primary" type="button" value="删除"/></td>
+              </tr>
+          </table>
+          <button class="but1" onclick="tablesToExcel(['backViewTable'], ['ProductDay1'], 'TestBook.xls', 'Excel')">导出</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<script src="../layui.all.js"></script>
+<script src="../js/jquery-3.0.0.min.js"></script>
+<script>
+   
+  layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function () {
+    var laydate = layui.laydate //日期
+      , laypage = layui.laypage //分页
+      , layer = layui.layer //弹层
+      , table = layui.table //表格
+      , carousel = layui.carousel //轮播
+      , upload = layui.upload //上传
+      , element = layui.element //元素操作
+      , slider = layui.slider; //滑块
+
+
+
+  })
+
+  $(".layui-nav li").click(function () {
+    //获取点击的元素给其添加样式，讲其兄弟元素的样式移除
+    $(this).addClass("layui-nav-itemed").siblings().removeClass("layui-nav-itemed");
+    //获取选中元素的下标
+
+  });
+
+
+  $("#import").click(function () {//点击导入按钮，使files触发点击事件，然后完成读取文件的操作。
+    $("#files").click();
+  });
+  //导入文件
+  aa = function () {
+    var selectedFile = document.getElementById("files").files[0];//获取读取的File对象
+    var name = selectedFile.name;//读取选中文件的文件名
+    var size = selectedFile.size;//读取选中文件的大小
+    console.log("文件名:" + name + "大小：" + size);
+
+    var reader = new FileReader();//这里是核心！！！读取操作就是由它完成的。
+    reader.readAsText(selectedFile);//读取文件的内容
+
+    reader.onload = function () {
+      console.log(this.result);//当读取完成之后会回调这个函数，然后此时文件的内容存储到了result中。直接操作即可。
+    };
+  }
+  //导出文件
+  var tablesToExcel = (function() {
+        var uri = 'data:application/vnd.ms-excel;base64,'
+            , tmplWorkbookXML = '<?xml version="1.0"?><?mso-application progid="Excel.Sheet"?><Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">'
+            + '<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office"><Author>Axel Richter</Author><Created>{created}</Created></DocumentProperties>'
+            + '<Styles>'
+            + '<Style ss:ID="Currency"><NumberFormat ss:Format="Currency"></NumberFormat></Style>'
+            + '<Style ss:ID="Date"><NumberFormat ss:Format="Medium Date"></NumberFormat></Style>'
+            + '</Styles>'
+            + '{worksheets}</Workbook>'
+            , tmplWorksheetXML = '<Worksheet ss:Name="{nameWS}"><Table>{rows}</Table></Worksheet>'
+            , tmplCellXML = '<Cell{attributeStyleID}{attributeFormula}><Data ss:Type="{nameType}">{data}</Data></Cell>'
+            , base64 = function(s) { return window.btoa(unescape(encodeURIComponent(s))) }
+            , format = function(s, c) { return s.replace(/{(\w+)}/g, function(m, p) { return c[p]; }) }
+        return function(tables, wsnames, wbname, appname) {
+            var ctx = "";
+            var workbookXML = "";
+            var worksheetsXML = "";
+            var rowsXML = "";
+
+            for (var i = 0; i < tables.length; i++) {
+                if (!tables[i].nodeType) tables[i] = document.getElementById(tables[i]);
+
+//              控制要导出的行数
+                for (var j = 0; j < tables[i].rows.length; j++) {
+                    rowsXML += '<Row>';
+
+//                    控制导出的列数（在本例中，最后一列为button,导出的文件会出错，所以导出到倒数第二列
+                    for (var k = 0; k < tables[i].rows[j].cells.length-1; k++) {
+                        var dataType = tables[i].rows[j].cells[k].getAttribute("data-type");
+                        var dataStyle = tables[i].rows[j].cells[k].getAttribute("data-style");
+                        var dataValue = tables[i].rows[j].cells[k].getAttribute("data-value");
+                        dataValue = (dataValue)?dataValue:tables[i].rows[j].cells[k].innerHTML;
+                        var dataFormula = tables[i].rows[j].cells[k].getAttribute("data-formula");
+                        dataFormula = (dataFormula)?dataFormula:(appname=='Calc' && dataType=='DateTime')?dataValue:null;
+                        ctx = {  attributeStyleID: (dataStyle=='Currency' || dataStyle=='Date')?' ss:StyleID="'+dataStyle+'"':''
+                            , nameType: (dataType=='Number' || dataType=='DateTime' || dataType=='Boolean' || dataType=='Error')?dataType:'String'
+                            , data: (dataFormula)?'':dataValue
+                            , attributeFormula: (dataFormula)?' ss:Formula="'+dataFormula+'"':''
+                        };
+                        rowsXML += format(tmplCellXML, ctx);
+                    }
+                    rowsXML += '</Row>'
+                }
+                ctx = {rows: rowsXML, nameWS: wsnames[i] || 'Sheet' + i};
+                worksheetsXML += format(tmplWorksheetXML, ctx);
+                rowsXML = "";
+            }
+
+            ctx = {created: (new Date()).getTime(), worksheets: worksheetsXML};
+            workbookXML = format(tmplWorkbookXML, ctx);
+
+//          查看后台的打印输出
+            console.log(workbookXML);
+
+            var link = document.createElement("A");
+            link.href = uri + base64(workbookXML);
+            link.download = wbname || 'Workbook.xls';
+            link.target = '_blank';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    })();
+
+</script>
+
+</html>

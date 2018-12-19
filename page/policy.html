@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/layui.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<style>
+  .active2 {
+    color: #666666 !important
+  }
+</style>
+
+<body>
+  <!-- 头部 -->
+  <header class="service_head">
+    <div class="content">
+      <p>当前所在的位置：<a href="./video.html">新闻中心</a> </p>
+      <div class="login">
+        <img src="../img/login_b.png" alt="">
+        <a href="#">登录 / 注册</a>
+      </div>
+    </div>
+  </header>
+  <!-- 导航 -->
+  <div class="service_nav">
+    <ul class="fl nav_li">
+      <li><a href="./index.html">首页</a></li>
+      <li><a href="./Intermediary.html">科技中介服务</a></li>
+      <li><a href="./database.html">科技服务信息库</a></li>
+      <li><a href="./policy.html">政策发布</a></li>
+      <li><a href="./notice.html">新闻中心</a></li>
+      <li><a href="./activity.html">活动</a></li>
+      <li><a href="./introduce.html">关于我们</a></li>
+    </ul>
+    <div class="fl nav_left">
+      <a href="./index.html">
+        <img style="width: 210px;" src="../img/logo.png" alt="">
+      </a>
+
+    </div>
+  </div>
+  <!-- 内容 -->
+  <section id="newsCenter">
+    <div class="left fl">
+      <div class="nav">
+        <img src="../img/navigation.png">
+        <h4>数据导航</h4>
+      </div>
+
+      <ul class="policy_lis">
+        <li>
+          <a href="./policy.html">
+            <span></span>
+            市级科技服务政策
+          </a> </li>
+        <li>
+          <a href="./policy.html">
+            <span></span>
+            区级科技服务政策
+          </a>
+        </li>
+        <li>
+          <a href="./policy.html">
+            <span></span>
+            国家科技服务政策
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="right fl">
+      <div class="nav">
+        <img src="../img/policy_b.png">
+        <h4> 市级科技服务政策</h4>
+      </div>
+      <div class="tabbox">
+        　　<ul>
+            　　　　<li class="active2">创新创业服务</li>
+            　　　　<li>人才计划</li>
+            　　　　<li>基地平台建设</li>
+                    <li>科技奖励</li>
+                    <li>科技金融</li>
+                    <li>税收优惠</li>
+                    <li>资金支持</li>
+                    <li>科研计划</li>
+            　　　　<li>技术转移转化能力建设</li>　　
+          　　</ul>
+        <div class="content">
+          <div class="active1">
+            <div class="line">
+              <a href="./policy_del.html">
+                <p>大苏打撒旦撒旦撒旦撒泼来得及阿斯平到</p>
+              </a>
+              <div><span style="color: #ccc;">2017-21-3</span><a class="download">政策下载</a></div>
+              
+            </div>
+            <div class="line">
+              <p>大苏打撒旦撒旦撒旦撒泼来得及阿斯平到</p>
+              <div><span style="color: #ccc;">2017-21-3</span><button>政策下载</button></div>
+            </div>
+            <div class="line">
+              <p>大苏打撒旦撒旦撒旦撒泼来得及阿斯平到</p>
+              <div><span style="color: #ccc;">2017-21-3</span><button>政策下载</button></div>
+            </div>
+            <div class="line">
+              <p>大苏打撒旦撒旦撒旦撒泼来得及阿斯平到</p>
+              <div><span style="color: #ccc;">2017-21-3</span><button>政策下载</button></div>
+            </div>
+            <div class="line">
+              <p>大苏打撒旦撒旦撒旦撒泼来得及阿斯平到</p>
+              <div><span style="color: #ccc;">2017-21-3</span><button>政策下载</button></div>
+            </div>
+          </div>
+          <div>
+            　　<div>2222222222</div>
+          </div>
+          　　<div>33333333333</div>
+          　　　　<div>44444444</div>
+          　　
+        </div>
+      </div>
+      <div id="page"></div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div>
+      <a href="./index.html">首页</a>
+      <a href="./Intermediary.html">科技中介服务</a>
+      <a href="./database.html">科技服务信息库</a>
+      <a href="#">政策发布</a>
+      <a href="./notice.html">新闻中心</a>
+      <a href="#">活动</a>
+    </div>
+    <span class="click">^</span>
+  </footer>
+  <div class="fixed">
+    <img src="../img/ziyun.png" alt="">
+    <span>用户咨询</span>
+  </div>
+</body>
+
+<script src="../layui.all.js"></script>
+<script src="../js/jquery-3.0.0.min.js"></script>
+<script>
+  layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function () {
+    var laydate = layui.laydate //日期
+      , laypage = layui.laypage //分页
+      , layer = layui.layer //弹层
+      , table = layui.table //表格
+      , carousel = layui.carousel //轮播
+      , upload = layui.upload //上传
+      , element = layui.element //元素操作
+      , slider = layui.slider //滑块
+
+    //自定义样式
+    laypage.render({
+      elem: 'page'
+      , count: 100
+      , theme: '#1E9FFF'
+    });
+
+  })
+
+  $(function () {
+    //当点击跳转链接后，回到页面顶部位置
+    $("#footer .click").click(function () {
+      $('body,html').animate({ scrollTop: 0 }, 1000);
+      return false;
+    });
+    $(".tabbox li").click(function () {
+      //获取点击的元素给其添加样式，讲其兄弟元素的样式移除
+      $(this).addClass("active2").siblings().removeClass("active2");
+      //获取选中元素的下标
+      var index = $(this).index();
+      $(this).parent().siblings().children().eq(index).addClass("active1")
+        .siblings().removeClass("active1");
+    });
+  });
+</script>
+
+</html>
